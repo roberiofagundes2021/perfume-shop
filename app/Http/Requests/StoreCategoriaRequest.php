@@ -1,0 +1,41 @@
+<?php
+
+namespace App\Http\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class StoreCategoriaRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return TRUE;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        return [
+            //
+            'nome'=>'required', 
+        ];
+            if (empty('nome.required')) {
+                return redirect()->route('categoria.validacao');
+            }
+         
+    }
+
+    public function messages(){
+        return [
+            'nome.required' => 'Campo nome obrigatorio',
+        ];
+    }
+}
