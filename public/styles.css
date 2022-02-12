@@ -1,0 +1,167 @@
+#header{
+	background: #E9967A;
+	color: #000000;
+	font-family: Avantgarde;
+	padding: 20px;
+	text-align: center;
+	width: auto;
+	height: auto;
+	flex-basis: 100%;
+}
+
+#nav{
+	background: #FFC0CB;
+	height: 50px;
+	text-decoration: #ffffff;
+	font-family: Avantgarde;
+	width: auto;
+	text-decoration: none;
+	list-style: none;
+	height: auto;
+}
+
+#menu-h{
+	list-style: none;
+	padding: 0;
+	background: #ffffff;
+	width: auto;
+	text-align:center;
+	height: auto;
+}
+
+#menu-h li{
+	/*colocar em linha*/
+	display: inline-block;
+	height: auto;
+}
+
+#menu-h li a{
+	/*retira o sublinhado do menu*/
+	text-decoration: none;
+	color: black;
+	/*padding são os espaços*/
+	padding: 10px;
+	height: auto;
+}
+
+
+
+#menu-dashboard{
+	list-style: none;
+	padding: 0;
+	background: #ffffff;
+	width: auto;
+	text-align:center;
+	height: auto;
+}
+
+
+#menu-dashboard li{
+	/*colocar em linha*/
+	display: inline-block;
+	height: auto;
+}
+
+#menu-dashboard a{
+	/*retira o sublinhado do menu*/
+	text-decoration: none;
+	color: black;
+	/*padding são os espaços*/
+	padding: 10px;
+	height: auto;
+}
+/*para quando passa o mouse mudar de cor*/
+#menu-dashboard li a:hover{
+	background: blue;
+	height: auto;
+}
+
+
+#container{
+	width: auto;
+	height:auto;
+  left:50%;
+  top:70%;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:10px;
+  display: grid;
+  background: #f8f9fd;
+  padding: 40px;
+  padding-top:10px;
+  padding-right: 15px;
+  font-family: Avantgarde;
+   display: flex;
+   height: auto;
+}
+
+.table-sm{
+	background: #ffffff;
+	border-top: 20px;
+	border-top-color:#fff;
+	width: 100%;
+
+}
+
+.table-sm th{
+	background: #3d89f8;
+	color: #ffffff;
+	width: auto;
+}
+
+
+.btn-primary{
+	background:#3d89f8;
+	color: #ffffff;
+	text-align: justify;
+}
+
+.col{
+	text-align: justify;
+}
+
+.form-control{
+	text-align: justify;
+}
+
+body{
+
+	height: 100px;
+	font-family: Avantgarde;
+
+}
+
+.itensentradas_input{
+	width: 100px;
+	height: 20px;
+}
+
+#footer{
+	background: #E9967A;
+	height:auto;
+	color: #000000;
+	margin-top: 0px;
+	padding: 0px;
+	font-family: Avantgarde;
+	width: 100%;
+
+
+	/*para o rodapé no final da pagina */
+	position: fixed;
+    bottom:0;
+    left:0;
+    text-align: center;
+}
+
+#titulo_tabela{
+	display: inline-block;
+}
+
+#label{
+	text-align: justify;
+}
+
+
+
+
+
