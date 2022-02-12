@@ -42,7 +42,7 @@
                         
                        
                            
-                            <img src="{{ URL::asset('public/perfume-shop.png'); }}"
+                            <img src="{{ URL::asset('perfume-shop.png'); }}"
                         
                              
                          
