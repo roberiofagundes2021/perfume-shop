@@ -42,7 +42,7 @@
                         
                        
                             <img src="{{ URL::asset('images/perfume-shop.png'); }}"
-                        style="width:150px; height:150px;"> 
+                        style="width:150px; height:150px;">
                         
                              
                          
