@@ -42,7 +42,7 @@
                         
                        
                             <img src="{{ URL::asset('images/VENDA.png'); }}"
-                        style="width:150px; height:150px;">
+                       >
                         
                              
                          
