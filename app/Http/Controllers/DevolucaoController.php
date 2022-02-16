@@ -40,11 +40,11 @@ class DevolucaoController extends Controller
 
     public function store(StoreDevolucaoRequest $request){
 
-            $Devolucao = new Devolucao();
-            $Devolucao->quantidade_devolvida=$quantidade_devolvida;
-            $Devolucao->datadevolucao=$request->datadevolucao;
-            $Devolucao->descricao=$request->descricao;
-            $Devolucao->item_vendas_id=$request->item_vendas_id;
-            $Devolucao->save();
+            $StoreDevolucaoRequest = new Devolucao();
+            $StoreDevolucaoRequest->quantidade_devolvida=$quantidade_devolvida;
+            $StoreDevolucaoRequest->datadevolucao=$request->datadevolucao;
+            $StoreDevolucaoRequest->descricao=$request->descricao;
+            $StoreDevolucaoRequest->item_vendas_id=$request->item_vendas_id;
+            $StoreDevolucaoRequest->save();
     }
 }
