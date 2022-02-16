@@ -45,5 +45,7 @@ class CategoriaController extends Controller
         $Categoria->timestamps=$request->timestamps;
         $Categoria->save();
         
+        return route('categoria.index');
+        
     }
 }
