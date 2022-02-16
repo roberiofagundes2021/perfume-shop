@@ -37,9 +37,9 @@ class FormaPagamentoController extends Controller
 
     public function store(FormaPagamentoRequest $request){
 
-            $FormaPagamento=new FormaPagamento();
-            $FormaPagamento->tipo_pagamento=$tipo_pagamento;
-            $FormaPagamento->venda_id=$request->venda_id;
-            $FormaPagamento->save();
+            $FormaPagamentoRequest=new FormaPagamento();
+            $FormaPagamentoRequest->tipo_pagamento=$tipo_pagamento;
+            $FormaPagamentoRequest->venda_id=$request->venda_id;
+            $FormaPagamentoRequest->save();
     }
 }
