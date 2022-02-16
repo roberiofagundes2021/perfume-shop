@@ -37,14 +37,14 @@ class ParcelasController extends Controller
 
     public function store(StoreParcelaRequest $request){
 
-            $Parcelas=new Parcelas();
-            $Parcelas->numeros_parcelas=$request->numeros_parcelas;
-            $Parcelas->valor_parcelas=$request->valor_parcelas;
+            $StoreParcelaRequest=new Parcelas();
+            $StoreParcelaRequest->numeros_parcelas=$request->numeros_parcelas;
+            $StoreParcelaRequest->valor_parcelas=$request->valor_parcelas;
 
-            $Parcelas->status=$request->status;
-            $Parcelas->vencimento=$request->vencimento;
-            $Parcelas->valortotalparcela=$request->valortotalparcela;
-            $Parcelas->pagamento_id=$request->pagamento_id;
-            $Parcelas->save();
+            $StoreParcelaRequest->status=$request->status;
+            $StoreParcelaRequest->vencimento=$request->vencimento;
+            $StoreParcelaRequest->valortotalparcela=$request->valortotalparcela;
+            $StoreParcelaRequest->pagamento_id=$request->pagamento_id;
+            $StoreParcelaRequest->save();
     }
 }
