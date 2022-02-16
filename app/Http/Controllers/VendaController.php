@@ -35,18 +35,23 @@ class VendaController extends Controller
         $Venda = Venda::all();
         return view('Venda.index',compact('Venda'));
     }
-
-
+    
     public function store(StoreVendaRequest $request){
 
-            $StoreVendaRequest=new Venda();
+        $StoreVendaRequest=new Venda();
             $StoreVendaRequest->datavenda=$request->datavenda;
             $StoreVendaRequest->descontototal=$request->descontototal;
 
             $StoreVendaRequest->descontoacerto=$request->descontoacerto;
             $StoreVendaRequest->valortotal=$request->valortotal;
             $StoreVendaRequest->cliente_id=$request->cliente_id;
-            $StoreVendaRequest->save();
-   
+        $StoreCategoria->timestamps=$request->timestamps;
+        $StoreCategoria->save();
+        
+        return route('vendas.index');
+        
     }
+
+
+    
 }
