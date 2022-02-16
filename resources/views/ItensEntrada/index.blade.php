@@ -30,14 +30,7 @@
         <td>{{$ItensEntrada->ipi}}</td>
         <td>{{$ItensEntrada->frete}}</td>
         <td>{{$ItensEntrada->icms}}</td>
-        <td>
-            <form action="{{route('itensentradas.create')}}" method="post">
-                @csrf
-                <input type="submit" class="btn btn-primary" value="novo">
-            </form>
-         </td>
-
-        <td>
+      
             <form action="{{route('itensentradas.edit', ['id' => $ItensEntrada->id])}}" method="post">
                 @csrf
                 <input type="submit" class="btn btn-primary" value="alterar">
@@ -55,6 +48,15 @@
     </thead>
     
 @endforeach
+
+        <td>
+            <form action="{{route('itensentradas.create')}}" method="post">
+                @csrf
+                <input type="submit" class="btn btn-primary" value="novo">
+            </form>
+         </td>
+
+        <td>
     
 </table>
 
