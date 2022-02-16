@@ -40,10 +40,10 @@ class CategoriaController extends Controller
 
     public function store(StoreCategoriaRequest $request){
 
-        $Categoria = new Categoria();
-        $Categoria->nome=$request->nome;
-        $Categoria->timestamps=$request->timestamps;
-        $Categoria->save();
+        $StoreCategoria = new Categoria();
+        $StoreCategoria->nome=$request->nome;
+        $StoreCategoria->timestamps=$request->timestamps;
+        $StoreCategoria->save();
         
         return route('categoria.index');
         
