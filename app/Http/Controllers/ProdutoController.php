@@ -45,22 +45,22 @@ class ProdutoController extends Controller
 
     public function store(StoreProdutoRequest $request){
 
-            $Produto=new Produto();
-            $Produto->nome=$request->nome;
-            $Produto->icms=$request->icms;
+            $StoreProdutoRequest=new Produto();
+            $StoreProdutoRequest->nome=$request->nome;
+            $StoreProdutoRequest->icms=$request->icms;
 
-            $Produto->ipi=$request->ipi;
-            $Produto->frete=$request->frete;
-            $Produto->valornafabrica=$request->valornafabrica;
-            $Produto->valordecompra=$request->valordecompra;
-            $Produto->lucro=$request->lucro;
-            $Produto->valorvenda=$request->valorvenda;
-            $Produto->desconto=$request->desconto;
-            $Produto->quantidade=$request->quantidade;
-            $Produto->datavencimento=$request->datavencimento;
-            $Produto->marca_id=$request->marca_id;
-            $Produto->categoria_id=$request->categoria_id;
-            $Produto->prateleira_id=$request->prateleira_id;
-            $Produto->save();
+            $StoreProdutoRequest->ipi=$request->ipi;
+            $StoreProdutoRequest->frete=$request->frete;
+            $StoreProdutoRequest->valornafabrica=$request->valornafabrica;
+            $StoreProdutoRequest->valordecompra=$request->valordecompra;
+            $StoreProdutoRequest->lucro=$request->lucro;
+            $StoreProdutoRequest->valorvenda=$request->valorvenda;
+            $StoreProdutoRequest->desconto=$request->desconto;
+            $StoreProdutoRequest->quantidade=$request->quantidade;
+            $StoreProdutoRequest->datavencimento=$request->datavencimento;
+            $StoreProdutoRequest->marca_id=$request->marca_id;
+            $StoreProdutoRequest->categoria_id=$request->categoria_id;
+            $StoreProdutoRequest->prateleira_id=$request->prateleira_id;
+            $StoreProdutoRequest->save();
     }
 }
