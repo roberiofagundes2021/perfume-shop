@@ -18,11 +18,12 @@
 
              @endif
 
-<form action="{{route('vendas.store')}}" method="post">
+
    <div class="row g-3">
     @section('titulo','cadastro de venda')
     
         <div class="col">
+        <form action="{{route('vendas.store')}}" method="post">
              @csrf
             <label for="nome">descontototal</label>
             <input class="form-control" type="text" name="descontototal" id="descontototal" style="width:150px">
