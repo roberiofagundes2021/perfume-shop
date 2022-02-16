@@ -52,7 +52,7 @@
         <td>
             <form action="{{route('itensentradas.create')}}" method="post">
                 @csrf
-                <input type="submit" class="btn btn-primary" value="novo">
+                <input type="submit" class="btn btn-primary" value="adicionar novo item para entrada de produto">
             </form>
          </td>
 
