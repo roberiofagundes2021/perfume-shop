@@ -33,12 +33,7 @@
          <td>{{$entrada->dataentrada}}</td>
          <td>
 
-             <td>
-            <form action="{{route('entradas.create')}}" method="post">
-                @csrf 
-                <input type="submit" class="btn btn-primary" value="novo">
-            </form>
-         </td>
+           
 
           <td>
             <form action="{{route('entradas.edit', ['id' => $entrada->id])}}" method="post">
@@ -60,6 +55,12 @@
          
       </thead>
        @endforeach
+         <td>
+            <form action="{{route('entradas.create')}}" method="post">
+                @csrf 
+                <input type="submit" class="btn btn-primary" value="adicionar novo produtos">
+            </form>
+         </td>
      
     </table>
 
