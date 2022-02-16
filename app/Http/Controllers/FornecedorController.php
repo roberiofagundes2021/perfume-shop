@@ -37,9 +37,9 @@ class FornecedorController extends Controller
 
     public function store(StoreFornecedorRequest $request){
 
-            $Fornecedor=new Fornecedor();
-            $Fornecedor->razaosocial=$razaosocial;
-            $Fornecedor->cnpj=$request->cnpj;
-            $Fornecedor->save();
+            $StoreFornecedorRequest=new Fornecedor();
+            $StoreFornecedorRequest->razaosocial=$razaosocial;
+            $StoreFornecedorRequest->cnpj=$request->cnpj;
+            $StoreFornecedorRequest->save();
     }
 }
