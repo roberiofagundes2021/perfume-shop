@@ -37,9 +37,9 @@ class PagamentoController extends Controller
 
     public function store(StorePagamentoRequest $request){
 
-            $Pagamento=new Pagamento();
-            $Pagamento->valor_pagamento=$request->valor_pagamento;
-            $Pagamento->data_pagamento=$request->data_pagamento;
-            $Pagamento->save();
+            $StorePagamentoRequest=new Pagamento();
+            $StorePagamentoRequest->valor_pagamento=$request->valor_pagamento;
+            $StorePagamentoRequest->data_pagamento=$request->data_pagamento;
+            $StorePagamentoRequest->save();
     }
 }
