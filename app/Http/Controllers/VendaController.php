@@ -5,7 +5,6 @@ use App\Models\Venda;
 use App\Models\Cliente;
 use App\Http\Requests\StoreVendaRequest;
 
-use Illuminate\Http\Request;
 
 class VendaController extends Controller
 {
