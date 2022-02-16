@@ -40,14 +40,14 @@ class VendaController extends Controller
 
     public function store(StoreVendaRequest $request){
 
-            $Venda=new Venda();
-            $Venda->datavenda=$request->datavenda;
-            $Venda->descontototal=$request->descontototal;
+            $StoreVendaRequest=new Venda();
+            $StoreVendaRequest->datavenda=$request->datavenda;
+            $StoreVendaRequest->descontototal=$request->descontototal;
 
-            $Venda->descontoacerto=$request->descontoacerto;
-            $Venda->valortotal=$request->valortotal;
-            $Venda->cliente_id=$request->cliente_id;
-            $Venda->save();
+            $StoreVendaRequest->descontoacerto=$request->descontoacerto;
+            $StoreVendaRequest->valortotal=$request->valortotal;
+            $StoreVendaRequest->cliente_id=$request->cliente_id;
+            $StoreVendaRequest->save();
         return redirect()->route('itensvendas.create');
     }
 }
