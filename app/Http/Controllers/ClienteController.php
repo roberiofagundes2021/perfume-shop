@@ -45,13 +45,13 @@ class ClienteController extends Controller
 
     public function store(StoreClienteRequest $request){
 
-            $Cliente = new Cliente();
-            $Cliente->nome=$request->nome;
-            $Cliente->cpf=$request->cpf;
-            $Cliente->rg=$request->rg;
-            $Cliente->sexo=$request->sexo;
-            $Cliente->datanascimento=$request->datanascimento;
-            $Cliente->debito=$request->debito;
-            $Cliente->save();
+            $StoreClienteRequest = new Cliente();
+            $StoreClienteRequest->nome=$request->nome;
+            $StoreClienteRequest->cpf=$request->cpf;
+            $StoreClienteRequest->rg=$request->rg;
+            $StoreClienteRequest->sexo=$request->sexo;
+            $StoreClienteRequest->datanascimento=$request->datanascimento;
+            $StoreClienteRequest->debito=$request->debito;
+            $StoreClienteRequest->save();
     }
 }
