@@ -37,9 +37,9 @@ class PrateleiraController extends Controller
 
     public function store(StorePrateleiraRequest $request){
 
-            $Prateleira=new Prateleira();
-            $Prateleira->descricao=$request->descricao;
-            $Prateleira->quantidadedefrascos=$request->quantidadedefrascos;
-            $Prateleira->save();
+            $StorePrateleiraRequest=new Prateleira();
+            $StorePrateleiraRequest->descricao=$request->descricao;
+            $StorePrateleiraRequest->quantidadedefrascos=$request->quantidadedefrascos;
+            $StorePrateleiraRequest->save();
     }
 }
