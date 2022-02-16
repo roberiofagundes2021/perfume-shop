@@ -42,15 +42,15 @@ class ItensEntradaController extends Controller
 
     public function store(StoreItensEntradaRequest $request){
 
-            $ItensEntrada=new ItensEntrada();
-            $ItensEntrada->precocompra=$request->precocompra;
-            $ItensEntrada->quantidade=$request->quantidade;
-            $ItensEntrada->unidade=$request->unidade;
-            $ItensEntrada->ipi=$request->ipi;
-            $ItensEntrada->frete=$request->frete;
-            $ItensEntrada->icms=$request->icms;
-            $ItensEntrada->entrada_id=$request->entrada_id;
-            $ItensEntrada->produto_id=$request->produto_id;
-            $ItensEntrada->save();
+            $StoreItensEntradaRequest=new ItensEntrada();
+            $StoreItensEntradaRequest->precocompra=$request->precocompra;
+            $StoreItensEntradaRequest->quantidade=$request->quantidade;
+            $StoreItensEntradaRequest->unidade=$request->unidade;
+            $StoreItensEntradaRequest->ipi=$request->ipi;
+            $StoreItensEntradaRequest->frete=$request->frete;
+            $StoreItensEntradaRequest->icms=$request->icms;
+            $StoreItensEntradaRequest->entrada_id=$request->entrada_id;
+            $StoreItensEntradaRequest->produto_id=$request->produto_id;
+            $StoreItensEntradaRequest->save();
     }
 }
