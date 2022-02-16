@@ -44,7 +44,9 @@
 
         </thead>
 
-     <td>
+    
+                 @endforeach
+                  <td>
                     <form action="{{route('vendas.create')}}" method="post">
                         @csrf
                         <input type="submit" class="btn btn-primary" name="formulario" value="Fazer uma nova venda">
@@ -52,7 +54,7 @@
                 </td>
     </table>
 
-    @endforeach
+   
   </div>
 
 
