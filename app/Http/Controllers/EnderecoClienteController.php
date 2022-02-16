@@ -39,14 +39,14 @@ class EnderecoClienteController extends Controller
 
     public function store(StoreEnderecoClienteRequest $request){
 
-            $EnderecoCliente = new EnderecoCliente();
-            $EnderecoCliente->cidade=$cidade;
-            $EnderecoCliente->estado=$request->estado;
-            $EnderecoCliente->bairro=$request->bairro;
-            $EnderecoCliente->rua=$request->rua;
-            $EnderecoCliente->numero=$request->numero;
-            $EnderecoCliente->cep=$request->cep;
-            $EnderecoCliente->cliente_id=$request->cliente_id;
-            $EnderecoCliente->save();
+            $StoreEnderecoClienteRequest = new EnderecoCliente();
+            $StoreEnderecoClienteRequest->cidade=$cidade;
+            $StoreEnderecoClienteRequest->estado=$request->estado;
+            $StoreEnderecoClienteRequest->bairro=$request->bairro;
+            $StoreEnderecoClienteRequest->rua=$request->rua;
+            $StoreEnderecoClienteRequest->numero=$request->numero;
+            $StoreEnderecoClienteRequest->cep=$request->cep;
+            $StoreEnderecoClienteRequest->cliente_id=$request->cliente_id;
+            $StoreEnderecoClienteRequest->save();
     }
 }
