@@ -39,12 +39,12 @@ class ContatoFornecedorController extends Controller
 
     public function store(StoreContatoFornecedorRequest $request){
 
-            $ContatoFornecedor = new ContatoCliente();
-            $ContatoFornecedor->telefone_fornecedor=$telefone_fornecedor;
-            $ContatoFornecedor->whatsappfornecedor=$request->whatsappfornecedor;
-            $ContatoFornecedor->email_fornecedor=$request->email_fornecedor;
-            $ContatoFornecedor->fornecdor_id=$request->fornecdor_id;
-            $ContatoFornecedor->save();
+            $StoreContatoFornecedor = new ContatoCliente();
+            $StoreContatoFornecedor->telefone_fornecedor=$telefone_fornecedor;
+            $StoreContatoFornecedor->whatsappfornecedor=$request->whatsappfornecedor;
+            $StoreContatoFornecedor->email_fornecedor=$request->email_fornecedor;
+            $StoreContatoFornecedor->fornecdor_id=$request->fornecdor_id;
+            $StoreContatoFornecedor->save();
     }
     
 }
