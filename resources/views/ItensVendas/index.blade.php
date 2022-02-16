@@ -30,22 +30,22 @@
                 <input type="submit" class="btn btn-primary" value="deletar">
                 </form>
             </td>
-            <td>
-                <form action="{{route('itensvendas.create')}}" method="post">
-                    @csrf
-                    <input type="submit" class="btn btn-primary" name="formulario" value="novo">
-                </form>
-            </td>
-
+                       
             <td>
                 <form action="{{route('itensVenda.edit', ['id' => $Itens_Venda->id])}}" method="post">
                     @csrf
                     <input type="submit" class="btn btn-primary" name="formulario" value="alterar">
                 </form>
             </td>
-
+             @endforeach
+              <td>
+                <form action="{{route('itensvendas.create')}}" method="post">
+                    @csrf
+                    <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
+                </form>
+            </td>
         </thead>
-    @endforeach
+   
 </table>
 
 
