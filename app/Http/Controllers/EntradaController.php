@@ -41,10 +41,10 @@ class EntradaController extends Controller
 
     public function store(StoreEntradaRequest $request){
 
-            $Entrada=new Entrada();
-            $Entrada->valortotaldanota=$request->valortotaldanota;
-            $Entrada->dataentrada=$request->dataentrada;
-            $Entrada->fornecedor_id=$request->fornecedor_id;
-            $Entrada->save();
+            $StoreEntradaRequest=new Entrada();
+            $StoreEntradaRequest->valortotaldanota=$request->valortotaldanota;
+            $StoreEntradaRequest->dataentrada=$request->dataentrada;
+            $StoreEntradaRequest->fornecedor_id=$request->fornecedor_id;
+            $StoreEntradaRequest->save();
     }
 }
