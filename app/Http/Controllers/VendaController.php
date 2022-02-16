@@ -48,5 +48,6 @@ class VendaController extends Controller
             $Venda->valortotal=$request->valortotal;
             $Venda->cliente_id=$request->cliente_id;
             $Venda->save();
+        return redirect()->route('itensvendas.create');
     }
 }
