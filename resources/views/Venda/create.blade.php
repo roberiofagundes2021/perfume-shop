@@ -18,7 +18,7 @@
 
              @endif
 
-<form action="{{route('vendas.store')}}" method="post">
+<form action="{{route('/storevendas')}}" method="post">
    <div class="row g-3">
     @section('titulo','cadastro de venda')
     
