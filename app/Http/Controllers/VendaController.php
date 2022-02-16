@@ -37,7 +37,7 @@ class VendaController extends Controller
     }
 
 
-    public function storevendas(StoreVendaRequest $request){
+    public function store(StoreVendaRequest $request){
 
             $StoreVendaRequest=new Venda();
             $StoreVendaRequest->datavenda=$request->datavenda;
