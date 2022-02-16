@@ -39,8 +39,8 @@ class MarcaController extends Controller
 
     public function store(StoreMarcaRequest $request){
 
-            $Marca=new Marca();
-            $Marca->nome=$request->nome;
-            $Marca->save();
+            $StoreMarcaRequest=new Marca();
+            $StoreMarcaRequest->nome=$request->nome;
+            $StoreMarcaRequest->save();
     }
 }
