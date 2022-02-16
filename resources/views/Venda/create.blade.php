@@ -46,7 +46,7 @@
                 <select name="cliente_id" id="cliente_id" class="form-control">
                      @foreach($Cliente as $cliente)
                         <option value="{{old('cliente_id', $cliente->id)}}"> 
-                            {$cliente->nome}} 
+                            {{$cliente->nome}} 
                         </option>
                      @endforeach
                 </select>
