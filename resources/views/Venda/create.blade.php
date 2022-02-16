@@ -41,11 +41,13 @@
             <label for="cliente">cliente</label>
             {{-- pega a variavel passada pelo metodo create do controller --}}
             
-                <select class="form-control" name="cliente_id" style="width:150px">
-                    @foreach($Cliente as $cliente)
-                    <option  value="{{$cliente->cliente_id}}">
-                        {{ $cliente->nome }}
-                    </option>
+              
+                
+                <select name="cliente_id" id="cliente_id" class="form-control">
+                     @foreach($Cliente as $cliente)
+                        <option value="{{old('cliente_id', $cliente->id)}}"> 
+                            {$cliente->name}} 
+                        </option>
                      @endforeach
                 </select>
         
