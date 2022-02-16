@@ -38,13 +38,13 @@ class ContatoClienteController extends Controller
 
     public function store(StoreContatoClienteRequest $request){
 
-            $ContatoCliente = new ContatoCliente();
-            $ContatoCliente->nome=$request->nome;
-            $ContatoCliente->cpf=$request->cpf;
-            $ContatoCliente->rg=$request->rg;
-            $ContatoCliente->sexo=$request->sexo;
-            $ContatoCliente->datanascimento=$request->datanascimento;
-            $ContatoCliente->debito=$request->debito;
-            $ContatoClienteia->save();
+            $StoreContatoCliente = new ContatoCliente();
+            $StoreContatoCliente->nome=$request->nome;
+            $StoreContatoCliente->cpf=$request->cpf;
+            $StoreContatoCliente->rg=$request->rg;
+            $StoreContatoCliente->sexo=$request->sexo;
+            $StoreContatoCliente->datanascimento=$request->datanascimento;
+            $StoreContatoCliente->debito=$request->debito;
+            $StoreContatoCliente->save();
     }
 }
