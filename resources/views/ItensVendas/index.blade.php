@@ -16,6 +16,15 @@
                         @csrf
                         <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
                     </form>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
+                <th>
+                </th>
                 
             </thead>
     
