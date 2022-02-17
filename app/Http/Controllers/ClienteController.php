@@ -54,4 +54,6 @@ class ClienteController extends Controller
             $StoreClienteRequest->debito=$request->debito;
             $StoreClienteRequest->save();
     }
+    
+ 
 }
