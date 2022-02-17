@@ -8,16 +8,9 @@
 @section('conteudo')
 <div>
 <table class="table table-sm">
-        
-       
-
-
-
-  
-
       
     @section('titulo','ItensVendas')
-     <thead
+  
             <th>
                     <form action="{{route('itensvendas.create')}}" method="post">
                         @csrf
@@ -25,7 +18,7 @@
                     </form>
 
            </th>
-         </thead>
+    
     
     @foreach ($ItensVendas as $Itens_Venda )
         <thead>
