@@ -25,8 +25,7 @@ class StoreVendaRequest extends FormRequest
     {
         return [
             //
-            'descontototal'=>'required',
-            'descontoacerto'=>'required',
+            
             'data_venda'=>'required',
             'cliente_id'=>'required',
         ];
@@ -35,8 +34,6 @@ class StoreVendaRequest extends FormRequest
 
     public function messages(){
         return [
-            'descontototal.required' => 'Campo desconto total obrigatorio',
-            'descontoacerto.required' => 'Campo desconto acerto obrigatorio',
             'data_venda.required' => 'Campo data venda obrigatorio',
             'cliente_id.required' => 'Campo nome do cliente obrigatorio',
         ];
