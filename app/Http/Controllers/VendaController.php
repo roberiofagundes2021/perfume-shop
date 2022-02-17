@@ -48,7 +48,7 @@ class VendaController extends Controller
             $Venda->timestamps=$request->timestamps;
             $Venda->save();
         
-        return route('vendas.index');
+      
         
     }
 
