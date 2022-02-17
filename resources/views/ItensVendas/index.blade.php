@@ -6,9 +6,7 @@
 
 
 @section('conteudo')
-
-
-<table class="table table-sm">
+<div>
 <table class="table table-sm">
 <td>
                 <form action="{{route('itensvendas.create')}}" method="post">
@@ -19,6 +17,10 @@
        </td>
 
 </table>
+</div>
+
+<table class="table table-sm">
+
       
     @section('titulo','ItensVendas')
     
