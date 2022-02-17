@@ -25,11 +25,7 @@
         <div class="col">
         <form action="{{route('vendas.store')}}" method="post">
              @csrf
-            <label for="nome">descontototal</label>
-            <input class="form-control" type="text" name="descontototal" id="descontototal" style="width:150px">
-
-            <label for="descontoacerto">descontoacerto</label>
-            <input class="form-control" type="text" name="descontoacerto" id="descontoacerto" style="width:150px"><br>
+            
 
              <input type="submit" class="btn btn-primary" value="cadastrar">
 
