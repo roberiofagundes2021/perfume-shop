@@ -48,7 +48,7 @@ class VendaController extends Controller
             $Venda->timestamps=$request->timestamps;
             $Venda->save();
         
-        return view('layouts.ItensVendas.create')->with('id', $id);  
+        return redirect('index/Venda')->with('msg', 'alteração realdizado com sucesso');
         
       
         
