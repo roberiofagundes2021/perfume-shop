@@ -17,8 +17,7 @@
        </td>
 
 </table>
-</div>
-<div>
+
     <table class="table table-sm">
 
       
