@@ -30,8 +30,7 @@
                     <input type="text" class="form-control" name="sexo" id="sexo">
                      <label for="datanascimento">datanascimento</label>
                       <input type="date" class="form-control" name="datanascimento" id="datanascimento">
-                   <label for="debito">debito</label>
-                    <input type="text" class="form-control" name="debito" id="debito"><br>
+              
                      <input type="submit" class="btn btn-primary" value="cadastrar">
         </div>
 
