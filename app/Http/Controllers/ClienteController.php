@@ -43,7 +43,7 @@ class ClienteController extends Controller
               
 
 
-    public function store(Request $request){
+    public function store(StoreClienteRequest $request){
         $cliente = new Cliente();
         $cliente->nome = $request-nome;
         $cliente->debito = $request->debito;
