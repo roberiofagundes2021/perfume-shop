@@ -10,6 +10,25 @@
 <table class="table table-sm">
       
     @section('titulo','ItensVendas')
+        <thead>
+            <th>
+                    <form action="{{route('itensvendas.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
+                    </form>
+
+           </th>
+           <th>
+           </th>
+           <th>
+           </th>
+           <th>
+           </th>
+           <th>
+           </th>
+           <th>
+           </th>
+        </thead>
     
             @foreach ($ItensVendas as $Itens_Venda )
         <thead>
@@ -43,23 +62,7 @@
             
         </thead>
   
-            <th>
-                    <form action="{{route('itensvendas.create')}}" method="post">
-                        @csrf
-                        <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
-                    </form>
-
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
+            
     
     
     
