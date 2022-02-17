@@ -33,8 +33,17 @@
 
                 <input type="submit" class="btn btn-primary" value="cadastrar">
             </div>
+               <label  for="produto_id">produto</label>
+              <select name="produto_id" id="produto_id" class="form-control">
+                     @foreach($Produto as $produto)
+                        <option value="{{old('produto_id', $produto->id)}}"> 
+                            {{$produto->nome}} 
+                        </option>
+                     @endforeach
+                </select>
+                
             <div class="col">
-                <label  for="produto_id">produto</label>
+                
                 {{-- pega a variavel passada pelo metodo create do controller --}}
                 
                 <select class="form-control" name="produto_id">
