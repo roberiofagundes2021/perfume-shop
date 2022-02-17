@@ -16,9 +16,9 @@
                 
        </td>
 
-</table>
 
-    <table class="table table-sm">
+
+  
 
       
     @section('titulo','ItensVendas')
