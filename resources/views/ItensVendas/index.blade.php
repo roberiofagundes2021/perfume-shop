@@ -7,14 +7,14 @@
 
 @section('conteudo')
 
-
-<table class="table table-sm">
-    @section('titulo','ItensVendas')
-      <td>
-                <form action="{{route('itensvendas.create')}}" method="post">
+<form action="{{route('itensvendas.create')}}" method="post">
                     @csrf
                     <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
                 </form>
+<table class="table table-sm">
+    @section('titulo','ItensVendas')
+      <td>
+                
             </td>
     @foreach ($ItensVendas as $Itens_Venda )
         <thead>
