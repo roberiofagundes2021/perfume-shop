@@ -224,7 +224,7 @@ Route::post('/produto/edit/{id}',[ProdutoController::class,'edit'])->name('produ
 
 Route::post('/create/vendas',[VendaController::class,'create'])->name('vendas.create');
 Route::get('/create/vendas',[VendaController::class,'create'])->name('vendas.create');
-Route::post('/storevendas',[VendaController::class,'store'])->name('vendas.store');
+Route::post('/create/itensvendas',[VendaController::class,'store'])->name('vendas.store');
 Route::get('index/vendas',[VendaController::class,'index'])->name('vendas.index');
 Route::delete('/vendas/{id}',[VendaController::class,'destroy'])->name('vendas.delete');
 Route::put('/vendas/update/{id}',[VendaController::class,'update'])->name('vendas.update');
