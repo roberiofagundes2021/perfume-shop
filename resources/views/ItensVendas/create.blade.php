@@ -36,7 +36,7 @@
                 {{-- pega a variavel passada pelo metodo create do controller --}}
                 
             
-                    <input type="hind" name="" value="get->id">
+                    <input type="hind" name="" value="{{id}}">
 
                  <label for="venda_id">venda</label>
                 {{-- pega a variavel passada pelo metodo create do controller --}}
