@@ -8,13 +8,16 @@
 @section('conteudo')
 <div>
 <table class="table table-sm">
-<th>
-                <form action="{{route('itensvendas.create')}}" method="post">
-                    @csrf
-                    <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
-                </form>
-                
-       </th>
+        
+        <thead
+            <th>
+                    <form action="{{route('itensvendas.create')}}" method="post">
+                        @csrf
+                        <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
+                    </form>
+
+           </th>
+         </thead>
 
 
 
