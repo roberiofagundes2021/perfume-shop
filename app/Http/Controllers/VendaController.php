@@ -48,7 +48,7 @@ class VendaController extends Controller
             $Venda->timestamps=$request->timestamps;
             $Venda->save();
         
-        return redirect('index/Venda')->with('msg', 'alteração realdizado com sucesso');
+       return redirect()->route('itensvendas.create',['id' => $Venda->id]);
         
       
         
