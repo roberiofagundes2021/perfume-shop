@@ -43,12 +43,14 @@ class ItensVendasController extends Controller
 
     public function store(StoreItensVendaRequest $request){
 
-            $StoreItensVendaRequest=new ItensVendas();
-            $StoreItensVendaRequest->quantidade_itens=$request->quantidade_itens;
-            $StoreItensVendaRequest->desconto=$request->desconto;
-            $StoreItensVendaRequest->valor=$request->valor;
-            $StoreItensVendaRequest->venda_id=$request->venda_id;
-            $StoreItensVendaRequest->produto_id=$request->produto_id;
-            $StoreItensVendaRequest->save();
+            $ItemVendas=new ItensVendas();
+            $ItemVendas->quantidade_itens=$request->quantidade_itens;
+            $ItemVendas->desconto=$request->desconto;
+            $ItemVendas->valor=$request->valor;
+            $ItemVendas->venda_id=$request->venda_id;
+            $ItemVendas->produto_id=$request->produto_id;
+            $ItemVendas->save();
+        
+        return redirect()->route('vendas.index');
     }
 }
