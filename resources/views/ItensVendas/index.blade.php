@@ -9,7 +9,15 @@
 <div>
 <table class="table table-sm">
         
-        <thead
+       
+
+
+
+  
+
+      
+    @section('titulo','ItensVendas')
+     <thead
             <th>
                     <form action="{{route('itensvendas.create')}}" method="post">
                         @csrf
@@ -18,13 +26,6 @@
 
            </th>
          </thead>
-
-
-
-  
-
-      
-    @section('titulo','ItensVendas')
     
     @foreach ($ItensVendas as $Itens_Venda )
         <thead>
