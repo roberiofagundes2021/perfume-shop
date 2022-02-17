@@ -18,8 +18,8 @@
 
 </table>
 </div>
-
-<table class="table table-sm">
+<div>
+    <table class="table table-sm">
 
       
     @section('titulo','ItensVendas')
@@ -57,6 +57,9 @@
         </thead>
    
 </table>
+
+</div>
+
 
 
 @endsection('conteudo')
