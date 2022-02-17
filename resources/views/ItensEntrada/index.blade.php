@@ -4,12 +4,9 @@
 @extends('layouts.app-index')
 
 
-
-
-
-
-
+<div>
 <table class="table table-sm">
+      
     @section('titulo','Itens Entradas')
    <div>
         <table class="table table-sm">
@@ -59,8 +56,11 @@
          </td>
 
         <td>
-    
+   
+   
 </table>
+
+</div>
 
 
 @endsection('conteudo')
