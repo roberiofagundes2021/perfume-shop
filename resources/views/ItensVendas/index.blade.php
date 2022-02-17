@@ -18,16 +18,7 @@
                     </form>
 
            </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
-           <th>
-           </th>
+  
         </thead>
     
             @foreach ($ItensVendas as $Itens_Venda )
