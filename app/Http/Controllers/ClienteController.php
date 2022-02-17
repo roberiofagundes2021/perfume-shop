@@ -43,7 +43,7 @@ class ClienteController extends Controller
               
 
 
-    public function store(StoreClienteRequest $request){
+    public function store(StoreClienteRequest $cliente){
 
             $cliente = new Cliente();
             $cliente->debito=$request->debito;
@@ -52,6 +52,7 @@ class ClienteController extends Controller
             $cliente->nome=$request->nome;
             $cliente->sexo=$request->sexo;
             $cliente->datanascimento=$request->datanascimento;
+        
             
             $cliente->save();
     }
