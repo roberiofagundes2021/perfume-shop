@@ -36,7 +36,7 @@
                 {{-- pega a variavel passada pelo metodo create do controller --}}
                 
             
-                    <input type="text" name="" value="{{$venda->id }}">
+                    <input type="text" name="" value="{{$Venda->id }}">
 
                  <label for="venda_id">venda</label>
                 {{-- pega a variavel passada pelo metodo create do controller --}}
