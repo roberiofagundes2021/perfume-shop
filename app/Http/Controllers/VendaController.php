@@ -48,7 +48,7 @@ class VendaController extends Controller
             $Venda->timestamps=$request->timestamps;
             $Venda->save();
         
-         return Redirect::route('itensentradas.create')->with('id',$id);
+         return Redirect::route('/create/itensvendas')->with('id',$id);
         
       
         
