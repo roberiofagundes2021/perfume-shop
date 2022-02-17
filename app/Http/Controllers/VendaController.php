@@ -40,10 +40,6 @@ class VendaController extends Controller
 
             $Venda=new Venda();
             $Venda->datavenda=$request->datavenda;
-            $Venda->descontototal=$request->descontototal;
-
-            $Venda->descontoacerto=$request->descontoacerto;
-            $Venda->valortotal=$request->valortotal;
             $Venda->cliente_id=$request->cliente_id;
             $Venda->timestamps=$request->timestamps;
             $Venda->save();
