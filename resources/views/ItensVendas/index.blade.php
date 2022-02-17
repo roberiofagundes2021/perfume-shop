@@ -11,10 +11,12 @@
       
     @section('titulo','ItensVendas')
             <thead>
+                <th>
                     <form action="{{route('itensvendas.create')}}" method="post">
                         @csrf
                         <input type="submit" class="btn btn-primary" name="formulario" value="adicionar novo itens para a venda">
                     </form>
+                 </th>
             </thead>
     
             @foreach ($ItensVendas as $Itens_Venda )
