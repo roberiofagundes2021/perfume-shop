@@ -36,22 +36,17 @@ class ClienteController extends Controller
         return view('clientes.index',compact('Cliente'));
     }
 
-
-
-               
-                   
-              
-
+                           
 
     public function store(StoreClienteRequest $request){
         $cliente = new Cliente();
-        $cliente->nome = $request-nome;
-        $cliente->debito = $request->debito;
-        $cliente->cpf = $request->cpf;
-        $cliente->rg = $request->rg;
-        $cliente->nome = $request->nome;
-        $cliente->sexo= $request ->sexo;
-        $cliente->datanascimento= $request ->datanascimento;
+        $cliente->nome=$request-nome;
+        $cliente->debito=$request->debito;
+        $cliente->cpf=$request->cpf;
+        $cliente->rg=$request->rg;
+        $cliente->nome=$request->nome;
+        $cliente->sexo=$request->sexo;
+        $cliente->datanascimento=$request->datanascimento;
         $cliente->save();
 
     return redirect()->route('/create/enderecocliente',['id' => $cliente->id]);
