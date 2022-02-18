@@ -51,6 +51,5 @@ class ItensVendasController extends Controller
             $ItemVendas->produto_id=$request->produto_id;
             $ItemVendas->save();
         
-        return redirect()->route('vendas.index');
     }
 }
