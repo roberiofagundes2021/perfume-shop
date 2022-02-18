@@ -72,7 +72,7 @@ Route::group(['prefix' => 'categorias'], function(){
 Route::get('/create/cliente',[ClienteController::class,'create'])->name('cliente.create');
 Route::post('/create/cliente',[ClienteController::class,'create'])->name('cliente.create');
 
-Route::post('/storecliente',[ClienteController::class,'store'])->name('cliente.store');
+cRoute::post('/storeliente',[ClienteController::class,'store'])->name('cliente.store');
 Route::get('/index/cliente',[ClienteController::class,'index'])->name('cliente.index');
 Route::delete('/cliente/{id}',[ClienteController::class,'destroy'])->name('cliente.delete');
 Route::post('/cliente/edit/{id}',[ClienteController::class,'edit'])->name('cliente.edit');
@@ -224,7 +224,7 @@ Route::post('/produto/edit/{id}',[ProdutoController::class,'edit'])->name('produ
 
 Route::post('/create/vendas',[VendaController::class,'create'])->name('vendas.create');
 Route::get('/create/vendas',[VendaController::class,'create'])->name('vendas.create');
-Route::post('/create/itensvendas',[VendaController::class,'store'])->name('vendas.store');
+Route::post('/storevendas',[VendaController::class,'store'])->name('vendas.store');
 Route::get('index/vendas',[VendaController::class,'index'])->name('vendas.index');
 Route::delete('/vendas/{id}',[VendaController::class,'destroy'])->name('vendas.delete');
 Route::put('/vendas/update/{id}',[VendaController::class,'update'])->name('vendas.update');
